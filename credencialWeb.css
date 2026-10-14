@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    /* Ocupa toda la altura de la pantalla */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+}
+
+.tarjeta {
+    background-color: cadetblue;
+    width: 40%;
+    padding: 50px;
+    border: 4 solid #0000;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    /*Centra verticalmente los elementos dentro*/
+    gap: 10px;
+    /*Espacio entre las imagenes y los texto*/
+    background-color: cadetblue;
+    /*Color de fondo del header*/
+    width: 700px;
+    /*Ajusta el tamaño*/
+    padding: 10px;
+    /*Espaciado interno*/
+    border-radius: 250px;
+    /*Border redondeados*/
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.918);
+    /*Sombra del header*/
+
+}
+
+.contenedor-foto img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+ 
+}
+
+
+.text-profesion {
+    display: flex;
+    flex-direction: column;
+}
+
+.nombre {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #111;
+    margin: 0 0 8px 0;
+}
+
+.profesion {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 0;
+}
+
+.informacion {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.dato-item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #444;
+}
+
+.dato-item i{
+    font-size: 16px;             /* Tamaño personalizado */
+    color: #3498db;              /* Color principal llamativo */
+    background-color: #eaf2f8;   /* Fondo sutil circular o cuadrado */
+    padding: 8px;                /* Espaciado interno */
+    border-radius: 50%;          /* Hace el fondo circular */
+    transition: all 0.3s ease;   /* Animación suave */
+}
+
+.info-personal{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.hobby .frase{
+    display: flex;
+}
+
+
+/*HOVER*/
+img :hover {
+    width: 250px;
+    height: 250px;
+}
+
+header:hover {
+    background-color: #f0f4f844;
+    /*Color de fondo del header*/
+    width: 700px;
+    padding: 20px 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.918);
+}
+
+.dato-item i:hover {
+    background-color: #3498db;
+    color: #ffffff;
+    transform: scale(1.1);       /* Pequeño zoom al pasar el cursor */
+}
