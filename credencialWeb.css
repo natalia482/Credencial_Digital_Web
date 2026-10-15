@@ -7,48 +7,32 @@ body {
     /* Ocupa toda la altura de la pantalla */
     margin: 0;
     display: flex;
-    justify-content: center;
+    justify-content:center;
     /* Centra horizontalmente */
     align-items: center;
     /* Centra verticalmente */
 }
 
-.tarjeta {
-    background-color: cadetblue;
-    width: 40%;
-    padding: 50px;
-    border: 4 solid #0000;
+.tarjeta{
+    background-color: #4444442f;
+    padding: 10px 30px;
 }
 
-header {
-    display: flex;
-    align-items: center;
-    /*Centra verticalmente los elementos dentro*/
-    gap: 10px;
-    /*Espacio entre las imagenes y los texto*/
-    background-color: cadetblue;
-    /*Color de fondo del header*/
-    width: 700px;
-    /*Ajusta el tamaño*/
-    padding: 10px;
-    /*Espaciado interno*/
-    border-radius: 250px;
-    /*Border redondeados*/
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.918);
-    /*Sombra del header*/
-
+.contenedor-foto{
+    padding: 10px 20px;
+    border: solid #111 1px;
+    border-radius: 10px 40px;
 }
 
-.contenedor-foto img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
- 
+img{
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    
 }
 
-
-.text-profesion {
+.text-profesion{
     display: flex;
     flex-direction: column;
 }
@@ -57,7 +41,7 @@ header {
     font-size: 1.5rem;
     font-weight: bold;
     color: #111;
-    margin: 0 0 8px 0;
+    margin: 0 0 1px 0;
 }
 
 .profesion {
@@ -81,6 +65,10 @@ header {
     color: #444;
 }
 
+.dato-item a{
+    text-decoration: none;
+}
+
 .dato-item i{
     font-size: 16px;             /* Tamaño personalizado */
     color: #3498db;              /* Color principal llamativo */
@@ -92,29 +80,21 @@ header {
 
 .info-personal{
     display: flex;
-    flex-direction: row;
-    gap: 8px;
-    margin-top: 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
-.hobby .frase{
+.frase{
     display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #e41a1a;
 }
 
 
 /*HOVER*/
-img :hover {
-    width: 250px;
-    height: 250px;
-}
-
-header:hover {
-    background-color: #f0f4f844;
-    /*Color de fondo del header*/
-    width: 700px;
-    padding: 20px 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.918);
-}
 
 .dato-item i:hover {
     background-color: #3498db;
