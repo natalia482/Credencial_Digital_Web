@@ -14,13 +14,16 @@ body {
 }
 
 .tarjeta{
-    background-color: #4444442f;
+    background-image: url("img/fondo.png");
+    background-repeat: no-repeat;
+    border: solid #0505057c 3px;
     padding: 10px 30px;
+    border-radius: 30px 10px;
 }
 
 .contenedor-foto{
     padding: 10px 20px;
-    border: solid #111 1px;
+    /*border: solid #111 1px;*/
     border-radius: 10px 40px;
 }
 
@@ -46,7 +49,7 @@ img{
 
 .profesion {
     font-size: 1.2rem;
-    color: #555;
+    color: #161616;
     margin: 0;
 }
 
@@ -95,6 +98,11 @@ img{
 
 
 /*HOVER*/
+
+img:hover{
+    width: 400px;
+    height: 400px; 
+}
 
 .dato-item i:hover {
     background-color: #3498db;
