@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Erica+One&family=Gugi&family=Unica+One&family=WDXL+Lubrifont+JP+N&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Erica+One&family=Gugi&family=Rubik+Spray+Paint&family=Unica+One&family=WDXL+Lubrifont+JP+N&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Erica+One&family=Gugi&family=Londrina+Shadow&family=Rubik+Spray+Paint&family=Unica+One&family=WDXL+Lubrifont+JP+N&display=swap');
+
+
 * {
     box-sizing: border-box;
 }
@@ -7,37 +12,58 @@ body {
     /* Ocupa toda la altura de la pantalla */
     margin: 0;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     /* Centra horizontalmente */
     align-items: center;
     /* Centra verticalmente */
 }
 
-.tarjeta{
+.tarjeta {
     background-image: url("img/fondo.png");
+    opacity: 0.9;
+    width: 800px;
     background-repeat: no-repeat;
     border: solid #0505057c 3px;
     padding: 10px 30px;
-    border-radius: 30px 10px;
-}
-
-.contenedor-foto{
-    padding: 10px 20px;
-    /*border: solid #111 1px;*/
-    border-radius: 10px 40px;
-}
-
-img{
-    display: block;
-    margin: 0 auto;
-    width: 300px;
-    height: 300px;
+    border-radius: 10px 10px;
+    box-shadow: 10px 10px 15px -3px rgba(52, 152, 219, 0.185);
     
 }
 
-.text-profesion{
+.contenedor-foto {
+    padding: 10px 20px;
+
+}
+
+img {
+    position: relative;
+    top: 54px;
+    right: 48px;
+    width: 300px;
+    height: 300px;
+
+}
+
+.online {
+    position: relative;
+    top: 60px;
+    right: 300px;
+    z-index: 10;
+    font-family: "Rubik Spray Paint", system-ui;
+  font-weight: 400;
+  font-style: normal;
+    font-size: 3rem;
+    color: #000000;
+}
+
+.text-profesion {
+    position: relative;
     display: flex;
     flex-direction: column;
+    bottom: 170px;
+    left:280px;
+
+
 }
 
 .nombre {
@@ -45,67 +71,101 @@ img{
     font-weight: bold;
     color: #111;
     margin: 0 0 1px 0;
+    font-family: "Gugi", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .profesion {
     font-size: 1.2rem;
     color: #161616;
     margin: 0;
+    font-family: "Unica One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .informacion {
+    position: relative;
+       bottom: 170px;
+    left:295px;
     display: flex;
     flex-direction: row;
-    gap: 8px;
-    margin-top: 12px;
+    font-family: "Unica One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-.dato-item{
+.dato-item {
     display: flex;
     align-items: center;
     gap: 10px;
     font-size: 14px;
-    color: #444;
+    margin-right: 10px;
 }
 
-.dato-item a{
+.dato-item a {
     text-decoration: none;
 }
 
-.dato-item i{
-    font-size: 16px;             /* Tamaño personalizado */
-    color: #3498db;              /* Color principal llamativo */
-    background-color: #eaf2f8;   /* Fondo sutil circular o cuadrado */
-    padding: 8px;                /* Espaciado interno */
-    border-radius: 50%;          /* Hace el fondo circular */
-    transition: all 0.3s ease;   /* Animación suave */
+.dato-item i {
+    font-size: 16px;
+    /* Tamaño personalizado */
+    color: rgb(52, 152, 219);
+    /* Color principal llamativo */
+    background-color: #eaf2f8;
+    /* Fondo sutil circular o cuadrado */
+    padding: 8px;
+    /* Espaciado interno */
+    border-radius: 50%;
+    /* Hace el fondo circular */
+    transition: all 0.3s ease;
+    /* Animación suave */
 }
 
-.info-personal{
+.info-personal {
+    position: relative;
+    bottom: 160px;
+    left:299px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
     gap: 10px;
+    font-family: "Unica One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-.frase{
+.frase {
     display: flex;
     align-items: center;
     gap: 10px;
     font-size: 14px;
-    color: #000000;
+    color: #030303;
 }
+
+.insignia {
+    position: relative;
+    color: #aca10e;
+ 
+    font-family: "Rubik Spray Paint", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
 
 
 /*HOVER*/
 
-img:hover{
-    width: 400px;
-    height: 400px; 
+img:hover {
+    width: 350px;
+    height: 350px;
+    transition: all 0.3s ease;
 }
 
 .dato-item i:hover {
     background-color: #3498db;
     color: #ffffff;
-    transform: scale(1.1);       /* Pequeño zoom al pasar el cursor */
+    transform: scale(1.1);
+    /* Pequeño zoom al pasar el cursor */
 }
